@@ -22,10 +22,10 @@
             <li class="list-of-nav__item visually-hidden">
               <a href="">текстиль</a>
             </li>
-            <li class="list-of-nav__item">
+            <li class="list-of-nav__item list-of-nav__item--search">
               <a href="">search</a>
             </li>
-            <li class="list-of-nav__item">
+            <li class="list-of-nav__item list-of-nav__item--cart">
               <a href="">cart</a>
             </li>
         </ul>
@@ -34,16 +34,16 @@
     </header>
 
     <main class="main">
-      <h1 class="main__header">дизайнерская мебель</h1>
       <form class="main__major-product major-product" action="">
-        <img class="major-product__image" src="#" alt="Кресло Антиква">
+        <img class="major-product__image" src="img/antique_chair_mob.jpg" alt="Кресло Антиква">
+        <h1 class="main__header">дизайнерская мебель</h1>
         <p class="major-product__name">
           Кресло Антиква
         </p>
         <p class="major-product__price">
           $380
         </p>
-        <p class="major-product__special-price">
+        <p class="major-product__price major-product__price--special">
           $240
         </p>
         <div class="major-product__choose">
@@ -53,17 +53,23 @@
           <label for="4"><input type="radio" id="4">4</label>
         </div>
 
-        <button class="major-product__buy" >Покупить</button>
+        <button class="major-product__buy button" >купить</button>
       </form>
 
       <section class="newcomes">
         <h2 class="newcomes__header">
-          НОВИНКИ
+          новинки
         </h2>
         <div class="newcomes__product prod">
-          <img class="prod__image" src="#" alt="Стул «Смеркается»">
+          <img class="prod__image" src="#" alt="Стул «Смеркается»" width="175" height="169">
           <p class="prod__description">Стул «Смеркается»</p>
           <p class="prod__price">$240</p>
+        </div>
+
+        <div class="newcomes__product prod prod--accent">
+          <img class="prod__image" src="#" alt="Стол «Крем брюле»" width="270" height="198">
+          <p class="prod__description">Стол «Крем брюле»</p>
+          <p class="prod__price">$320</p>
         </div>
 
         <div class="newcomes__product prod">
@@ -72,20 +78,14 @@
           <p class="prod__price">$250</p>
         </div>
 
-        <div class="newcomes__product prod prod--accent">
-          <img class="prod__image" src="#" alt="Стол «Крем брюле»">
-          <p class="prod__description">Стол «Крем брюле»</p>
-          <p class="prod__price">$320</p>
-        </div>
-
         <div class="newcomes__product prod prod--big">
           <img class="prod__image prod__image--big" src="#" alt="Стул офисный «Белый шоколад»">
-          <p class="prod__description">Стул офисный «Белый шоколад»</p>
-          <p class="prod__price">$120</p>
+          <p class="prod__description prod__description--big">Стул офисный «Белый шоколад»</p>
+          <p class="prod__price prod__price--big">$120</p>
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews visually-hidden">
         <img class="reviews__image" src="#" alt="аватар">
         <p class="reviews__name">
           Елена Новикова
@@ -96,9 +96,12 @@
         <p class="reviews__review">
           «Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»
         </p>
+        <button class="reviews__button">B</button>
+        <button class="reviews__button">F</button>
       </section>
 
       <section class="last-chance">
+        <h2 class="last-chance__header">последний шанс</h2>
         <nav class="last-chance__nav chance-navigation">
           <ul class="chance-navigation__list">
             <li class="chance-navigation__item">
@@ -127,14 +130,14 @@
               <p class="last-chance__old-price">
                 $245
               </p>
-              <img class="last-chance__buy" src="#" alt="Стул «Карамель»">
+              <img class="last-chance__img" src="#" alt="Стул «Карамель»">
             </div>
-            <button class="last-chance__buy">
+            <button class="last-chance__buy visually-hidden">
               купить
             </button>
           </li>
 
-          <li class="last-chance__item">
+          <li class="last-chance__item visually-hidden">
             <div class="last-chance__wrapper">
               <p class="last-chance__name">
                 Стул «Облако»
@@ -145,14 +148,14 @@
               <p class="last-chance__old-price">
                 $250
               </p>
-              <img class="last-chance__buy" src="#" alt="Стул «Облако»">
+              <img class="last-chance__img" src="#" alt="Стул «Облако»">
             </div>
-            <button class="last-chance__buy">
+            <button class="last-chance__buy visually-hidden" >
               купить
             </button>
           </li>
 
-          <li class="last-chance__item">
+          <li class="last-chance__item visually-hidden">
             <div class="last-chance__wrapper">
               <p class="last-chance__name">
                 Стул «Сова»
@@ -163,14 +166,14 @@
               <p class="last-chance__old-price">
                 $260
               </p>
-              <img class="last-chance__buy" src="#" alt="Стул «Сова»">
+              <img class="last-chance__img" src="#" alt="Стул «Сова»">
             </div>
-            <button class="last-chance__buy">
+            <button class="last-chance__buy visually-hidden">
               купить
             </button>
           </li>
 
-          <li class="last-chance__item">
+          <li class="last-chance__item visually-hidden">
             <div class="last-chance__wrapper">
               <p class="last-chance__name">
                 Стул «Мая»
@@ -181,14 +184,14 @@
               <p class="last-chance__old-price">
                 $330
               </p>
-              <img class="last-chance__buy" src="#" alt="Стул «Мая»">
+              <img class="last-chance__img" src="#" alt="Стул «Мая»">
             </div>
-            <button class="last-chance__buy">
+            <button class="last-chance__buy visually-hidden">
               купить
             </button>
           </li>
 
-          <li class="last-chance__item">
+          <li class="last-chance__item visually-hidden">
             <div class="last-chance__wrapper">
               <p class="last-chance__name">
                 Стул «Месси»
@@ -199,27 +202,9 @@
               <p class="last-chance__old-price">
                 $305
               </p>
-              <img class="last-chance__buy" src="#" alt="Стул «Месси»">
+              <img class="last-chance__img" src="#" alt="Стул «Месси»">
             </div>
-            <button class="last-chance__buy">
-              купить
-            </button>
-          </li>
-
-          <li class="last-chance__item">
-            <div class="last-chance__wrapper">
-              <p class="last-chance__name">
-                Стул «Карамель»
-              </p>
-              <p class="last-chance__price">
-                $195
-              </p>
-              <p class="last-chance__old-price">
-                $245
-              </p>
-              <img class="last-chance__buy" src="#" alt="Стул «Карамель»">
-            </div>
-            <button class="last-chance__buy">
+            <button class="last-chance__buy visually-hidden">
               купить
             </button>
           </li>

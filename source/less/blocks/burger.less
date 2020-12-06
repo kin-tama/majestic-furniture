@@ -1,0 +1,25 @@
+.burger {
+  border-top: black 2px solid;
+  border-bottom: black 2px solid;
+  border-left: none;
+  border-right: none;
+  width: 25px;
+  height: 17px;
+  background-color: white;
+  position: relative;
+
+  &:hover {
+    opacity: 0.4;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-color: black;
+    width: 25px;
+    height: 2px;
+  }
+}
+

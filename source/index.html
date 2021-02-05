@@ -60,7 +60,10 @@
 
     <main class="main">
       <form class="main__major-product major-product" action="">
-        <img class="major-product__image" src="img/antique_chair_mob.jpg" alt="Кресло Антиква">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/antique_chair_desctop_full.jpg" alt="Кресло Антиква">
+          <img class="major-product__image" set="img/antique_chair_mob_full.jpg 2x" srcset="img/antique_chair_mob_full.jpg 1x" alt="Кресло Антиква">
+        </picture>
         <h1 class="main__header">дизайнерская мебель</h1>
         <p class="major-product__name">
           Кресло Антиква
@@ -71,14 +74,17 @@
         <p class="major-product__price major-product__price--special">
           $240
         </p>
-        <div class="major-product__choose">
+        <!-- <div class="major-product__choose">
           <label for="1"><input type="radio" id="1">1</label>
           <label for="2"><input type="radio" id="2">2</label>
           <label for="3"><input type="radio" id="3">3</label>
           <label for="4"><input type="radio" id="4">4</label>
-        </div>
+        </div> -->
 
         <button class="major-product__buy button" >купить</button>
+        <div class="leaf">
+          <p class="leaf__count leaf__count--major">01 / 04</p>
+        </div>
       </form>
 
       <section class="newcomes">
@@ -86,25 +92,25 @@
           новинки
         </h2>
         <div class="newcomes__product prod">
-          <img class="prod__image" src="#" alt="Стул «Смеркается»" width="175" height="169">
+          <img class="prod__image prod__image--dark" src="img/getting_dark_chear.jpg" alt="Стул «Смеркается»" width="175" height="169">
           <p class="prod__description">Стул «Смеркается»</p>
           <p class="prod__price">$240</p>
         </div>
 
         <div class="newcomes__product prod prod--accent">
-          <img class="prod__image" src="#" alt="Стол «Крем брюле»" width="270" height="198">
+          <img class="prod__image" src="img/cream_table.png" alt="Стол «Крем брюле»" width="270" height="198">
           <p class="prod__description">Стол «Крем брюле»</p>
           <p class="prod__price">$320</p>
         </div>
 
         <div class="newcomes__product prod">
-          <img class="prod__image" src="#" alt="Люстра «Облако»">
+          <img class="prod__image" src="img/lamp.jpg" alt="Люстра «Облако»" width="202" height="226">
           <p class="prod__description">Люстра «Облако»</p>
           <p class="prod__price">$250</p>
         </div>
 
         <div class="newcomes__product prod prod--big">
-          <img class="prod__image prod__image--big" src="#" alt="Стул офисный «Белый шоколад»">
+          <img class="prod__image prod__image--big" src="img/white_chocolate_chair.jpg" alt="Стул офисный «Белый шоколад»">
           <p class="prod__description prod__description--big">Стул офисный «Белый шоколад»</p>
           <p class="prod__price prod__price--big">$120</p>
         </div>
@@ -129,16 +135,16 @@
         <h2 class="last-chance__header">последний шанс</h2>
         <nav class="last-chance__nav chance-navigation">
           <ul class="chance-navigation__list">
-            <li class="chance-navigation__item">
-              <a href="#">Стулья</a>
+            <li>
+              <a class="chance-navigation__item checked" href="#">Стулья</a>
             </li>
 
-            <li class="chance-navigation__item">
-              <a href="#">Диваны</a>
+            <li>
+              <a  class="chance-navigation__item" href="#">Диваны</a>
             </li>
 
-            <li class="chance-navigation__item">
-              <a href="#">Кресла</a>
+            <li>
+              <a  class="chance-navigation__item" href="#">Кресла</a>
             </li>
           </ul>
         </nav>
@@ -155,7 +161,7 @@
               <p class="last-chance__old-price">
                 $245
               </p>
-              <img class="last-chance__img" src="#" alt="Стул «Карамель»">
+              <img class="last-chance__img" src="img/caramel.png" alt="Стул «Карамель»">
             </div>
             <button class="last-chance__buy visually-hidden">
               купить
@@ -234,33 +240,42 @@
             </button>
           </li>
         </ul>
+
+        <div class="leaf">
+          <p class="leaf__count">01 / 04</p>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <nav class="footer__nav">
-        <div class="navigation__logo logo">
-          Здесь будет логотип
+        <svg class="navigation__logo logo" width="21" height="18">
+          <use xlink:href="#logo"></use>
+        </svg>
+        <div class="contacts">
+          <p class="contacts__phone">+7(495) 205-28-14</p>
+          <p class="contacts__mail">callium@gmail.com</p>
         </div>
-        <ul class="navigation__list list-of-nav">
-          <li class="list-of-nav__item">
+        <ul class="alt_nav__list">
+          <li class="alt_nav__item">
             <a href="">доставка</a>
           </li>
-          <li class="list-of-nav__item">
+          <li class="alt_nav__item">
             <a href="">оплата</a>
           </li>
-          <li class="list-of-nav__item">
+          <li class="alt_nav__item">
             <a href="">контакты</a>
           </li>
-          <li class="list-of-nav__item">
+          <li class="alt_nav__item">
             <a href="">гарантии</a>
           </li>
         </ul>
       </nav>
-      <div class="contacts">
-        <p class="contacts__phone">+7(495) 205-28-14</p>
-        <p class="contacts__mail">callium@gmail.com</p>
-      </div>
+
+      <p class="copyright">
+        © 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.
+      </p>
+
     </footer>
   </body>
 </html>

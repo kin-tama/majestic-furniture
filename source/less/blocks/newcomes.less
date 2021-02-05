@@ -1,8 +1,23 @@
+.newcomes {
+  position: relative;
+}
+
 .newcomes__header {
   font-family: @Playfair;
   font-size: 20px;
   line-height: 27px;
   text-transform: uppercase;
+  margin-bottom: 53px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 90px;
+    height: 4px;
+    left: 0;
+    top: 35px;
+  }
 }
 
 .newcomes__product {

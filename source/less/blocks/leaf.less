@@ -1,0 +1,33 @@
+.leaf {
+  position: relative;
+  width: 288px;
+  height: 26px;
+  text-align: right;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  padding-left: 240px;
+}
+
+.leaf__count {
+  margin: 0;
+  padding-top: 2px;
+  font-weight: 600;
+  font-size: 15px;
+  width: 48px;
+
+  &--major {
+    font-weight: 700;
+    padding: 0;
+    width: 50px;
+  }
+
+  &::before {
+    content: "";
+    top: 10px;
+    left: 0;
+    position: absolute;
+    height: 2px;
+    width: 226px;
+    background-color: @opacity-black-two;
+  }
+}

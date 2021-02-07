@@ -5,6 +5,13 @@ main {
   margin-left: auto;
   margin-right: auto;
   font-family: "Open Sans", "Arial", sans-serif;
+  @media (min-width: @desktop) {
+    width: 1440px;
+    position: relative;
+    top: -70px;
+    z-index: 0;
+    padding-left: 135px;
+  }
 }
 
 .main__header {
@@ -12,4 +19,9 @@ main {
   text-transform: uppercase;
   font-size: 27px;
   line-height: 46px;
+  @media (min-width: @desktop) {
+    margin-top: 235px;
+    font-size: 57px;
+    line-height: 83px;
+  }
 }

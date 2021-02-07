@@ -1,8 +1,42 @@
 .list-of-nav {
-  list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 69px;
+  list-style: none;
+  width: 75px;
   padding: 0;
+  outline: orangered solid 2px;
+  @media (min-width: @desktop) {
+    justify-content: inherit;
+    width: 1012px;
+  }
+}
+
+.list-of-nav {
+
+  &__item--furniture {
+    margin-right: 60px;
+  }
+
+  &__item--illumination {
+    margin-right: 63px;
+  }
+
+  &__item--textile {
+    margin-right: 553px;
+  }
+
+  &__item--search {
+    position: relative;
+    left: -20px;
+  }
+
+  &__item--hidden a {
+    color: @regular-black;
+    text-decoration: none;
+
+    @media (max-width: @mobile) {
+      display: none;
+    }
+  }
+
 }

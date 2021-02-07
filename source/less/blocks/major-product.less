@@ -1,10 +1,26 @@
 .major-product {
   padding-left: 16px;
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.major-product__wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @desktop) {
+
+  }
 }
 
 .major-product__name {
   font-size: 20px;
   line-height: 27px;
+
+  @media (min-width: @desktop) {
+    margin-top: 0;
+  }
 }
 
 .major-product__price {
@@ -27,4 +43,10 @@
   display: block;
   margin-left: auto;
   min-height: 327px;
+
+  @media (min-width: @desktop) {
+    min-height: 532px;
+    width: 739px;
+    background-image: url("../img/pink_back.svg");
+  }
 }

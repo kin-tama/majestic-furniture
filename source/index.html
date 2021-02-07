@@ -30,13 +30,13 @@
         </svg>
 
         <ul class="navigation__list list-of-nav">
-            <li class="list-of-nav__item visually-hidden">
+            <li class="list-of-nav__item list-of-nav__item--hidden list-of-nav__item--furniture">
               <a href="#">мебель</a>
             </li>
-            <li class="list-of-nav__item visually-hidden">
+            <li class="list-of-nav__item list-of-nav__item--hidden list-of-nav__item--illumination">
               <a href="#">освещение</a>
             </li>
-            <li class="list-of-nav__item visually-hidden">
+            <li class="list-of-nav__item list-of-nav__item--hidden list-of-nav__item--textile">
               <a href="#">текстиль</a>
             </li>
             <li class="list-of-nav__item list-of-nav__item--search">
@@ -54,37 +54,39 @@
               </a>
             </li>
           </ul>
-          <button class="burger"></button>
+          <!-- <button class="burger"></button> -->
       </nav>
     </header>
 
     <main class="main">
       <form class="main__major-product major-product" action="">
-        <picture>
+        <picture class="major-product__image">
           <source media="(min-width: 1200px)" srcset="img/antique_chair_desctop_full.jpg" alt="Кресло Антиква">
-          <img class="major-product__image" set="img/antique_chair_mob_full.jpg 2x" srcset="img/antique_chair_mob_full.jpg 1x" alt="Кресло Антиква">
+          <img  set="img/antique_chair_mob_full.jpg 2x" srcset="img/antique_chair_mob_full.jpg 1x" alt="Кресло Антиква">
         </picture>
-        <h1 class="main__header">дизайнерская мебель</h1>
-        <p class="major-product__name">
-          Кресло Антиква
-        </p>
-        <p class="major-product__price">
-          $380
-        </p>
-        <p class="major-product__price major-product__price--special">
-          $240
-        </p>
-        <!-- <div class="major-product__choose">
-          <label for="1"><input type="radio" id="1">1</label>
-          <label for="2"><input type="radio" id="2">2</label>
-          <label for="3"><input type="radio" id="3">3</label>
-          <label for="4"><input type="radio" id="4">4</label>
-        </div> -->
-
-        <button class="major-product__buy button" >купить</button>
-        <div class="leaf">
-          <p class="leaf__count leaf__count--major">01 / 04</p>
+        <div class="major-product__wrapper">
+          <h1 class="main__header">дизайнерская мебель</h1>
+          <p class="major-product__name">
+            Кресло Антиква
+          </p>
+          <p class="major-product__price">
+            $380
+          </p>
+          <p class="major-product__price major-product__price--special">
+            $240
+          </p>
+          <!-- <div class="major-product__choose">
+            <label for="1"><input type="radio" id="1">1</label>
+            <label for="2"><input type="radio" id="2">2</label>
+            <label for="3"><input type="radio" id="3">3</label>
+            <label for="4"><input type="radio" id="4">4</label>
+          </div> -->
+          <button class="major-product__buy button" >купить</button>
+          <div class="leaf">
+            <p class="leaf__count leaf__count--major">01 / 04</p>
+          </div>
         </div>
+
       </form>
 
       <section class="newcomes">
@@ -92,25 +94,37 @@
           новинки
         </h2>
         <div class="newcomes__product prod">
-          <img class="prod__image prod__image--dark" src="img/getting_dark_chear.jpg" alt="Стул «Смеркается»" width="175" height="169">
+          <picture class="prod__image prod__image--dark">
+            <source media="(min-width: 1200px)" srcset="img/getting_dark_chear_desk_1x.jpg 1x, img/getting_dark_chear_desk_2x.jpg 2x" alt="Стул «Смеркается»">
+              <img src="img/getting_dark_chear.jpg" alt="Стул «Смеркается»" width="175" height="169">
+          </picture>
           <p class="prod__description">Стул «Смеркается»</p>
           <p class="prod__price">$240</p>
         </div>
 
         <div class="newcomes__product prod prod--accent">
-          <img class="prod__image" src="img/cream_table.png" alt="Стол «Крем брюле»" width="270" height="198">
+          <picture class="prod__image">
+            <source media="(min-width: 1200px)" srcset="img/cream_table_desk_1x.png 1x, img/cream_table_desk_2x.jpg 2x" alt="Стол «Крем брюле»">
+            <img src="img/cream_table.png" alt="Стол «Крем брюле»" width="270" height="198">
+          </picture>
           <p class="prod__description">Стол «Крем брюле»</p>
           <p class="prod__price">$320</p>
         </div>
 
         <div class="newcomes__product prod">
-          <img class="prod__image" src="img/lamp.jpg" alt="Люстра «Облако»" width="202" height="226">
+          <picture class="prod__image">
+            <source media="(min-width: 1200px)" srcset="img/lamp_desk_1x.jpg 1x, img/lamp_desk_2x.jpg 2x" alt="Люстра «Облако»">
+            <img src="img/lamp.jpg" alt="Люстра «Облако»" width="202" height="226">
+          </picture>
           <p class="prod__description">Люстра «Облако»</p>
           <p class="prod__price">$250</p>
         </div>
 
         <div class="newcomes__product prod prod--big">
-          <img class="prod__image prod__image--big" src="img/white_chocolate_chair.jpg" alt="Стул офисный «Белый шоколад»">
+          <picture class="prod__image prod__image--big">
+            <source media="(min-width:1200px)" srcset="img/white_chocolate_chair_desk_1x.jpg 1x, img/white_chocolate_chair_desk_2x.jpg 2x" alt="Стул офисный «Белый шоколад»">
+            <img src="img/white_chocolate_chair.jpg" alt="Стул офисный «Белый шоколад»">
+          </picture>
           <p class="prod__description prod__description--big">Стул офисный «Белый шоколад»</p>
           <p class="prod__price prod__price--big">$120</p>
         </div>

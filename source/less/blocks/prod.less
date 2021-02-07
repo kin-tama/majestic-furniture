@@ -8,6 +8,10 @@
   margin-bottom: 0;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
 
+  @media (min-width: @desktop) {
+    min-height: 200px;
+  }
+
   &--accent {
     background-color: @pink;
   }
@@ -33,6 +37,11 @@
     margin-right: 56px;
     text-align: center;
   }
+
+  @media (min-width: @desktop) {
+    margin-top: 0;
+  }
+
 }
 
 .prod__price {
@@ -43,13 +52,22 @@
   margin-right: auto;
   margin-bottom: 16px;
   margin-top: 0;
+
+  @media (min-width: @desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .prod__image {
-  min-height: 200px;
+
   margin: auto;
 
   &--dark {
     margin-top: 20px;
+
+    @media (min-width: @desktop) {
+      margin-top: 20;
+      margin-bottom: 0;
+    }
   }
 }

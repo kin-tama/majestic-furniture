@@ -1,5 +1,25 @@
 .newcomes {
   position: relative;
+
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-direction: row;
+    width: 1162px;
+    justify-content: space-between;
+    outline: tomato solid 3px;
+  }
+}
+
+.newcomes__wrapper {
+  outline: steelblue solid;
+  @media (min-width: @desktop) {
+    display: grid;
+    width: 600px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 3px;
+  }
 }
 
 .newcomes__header {
@@ -18,9 +38,31 @@
     left: 0;
     top: 35px;
   }
+
+  @media (min-width: @desktop) {
+    font-size: 28px;
+    width: max-content;
+    height: max-content;
+    margin-top: 150px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: black;
+      width: 90px;
+      height: 4px;
+      left: 0;
+      top: 200px;
+    }
+  }
 }
 
 .newcomes__product {
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @desktop) {
+    margin: 0;
+  }
+
 }

@@ -75,13 +75,19 @@
           <p class="major-product__price major-product__price--special">
             $240
           </p>
-          <!-- <div class="major-product__choose">
-            <label for="1"><input type="radio" id="1">1</label>
-            <label for="2"><input type="radio" id="2">2</label>
-            <label for="3"><input type="radio" id="3">3</label>
-            <label for="4"><input type="radio" id="4">4</label>
-          </div> -->
-          <button class="major-product__buy button" >купить</button>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="leaf__wrapper">
+              <input type="radio" id="1" class="leaf__radio" name="leaf" value="1" checked>
+              <label for="1" class="leaf__count">01</label>
+              <input type="radio" id="2" class="leaf__radio" name="leaf" value="2">
+              <label for="2" class="leaf__count" >02</label>
+              <input type="radio" id="3" class="leaf__radio" name="leaf" value="3">
+              <label for="3" class="leaf__count">03</label>
+              <input type="radio" id="4" class="leaf__radio" name="leaf" value="4">
+              <label for="4" class="leaf__count">04</label>
+            </div>
+            <button class="major-product__buy button" >купить</button>
+          </form>
           <div class="leaf">
             <p class="leaf__count leaf__count--major">01 / 04</p>
           </div>
@@ -90,34 +96,36 @@
       </form>
 
       <section class="newcomes">
-        <h2 class="newcomes__header">
-          новинки
-        </h2>
-        <div class="newcomes__product prod">
-          <picture class="prod__image prod__image--dark">
-            <source media="(min-width: 1200px)" srcset="img/getting_dark_chear_desk_1x.jpg 1x, img/getting_dark_chear_desk_2x.jpg 2x" alt="Стул «Смеркается»">
-              <img src="img/getting_dark_chear.jpg" alt="Стул «Смеркается»" width="175" height="169">
-          </picture>
-          <p class="prod__description">Стул «Смеркается»</p>
-          <p class="prod__price">$240</p>
-        </div>
+        <div class="newcomes__wrapper">
+          <h2 class="newcomes__header">
+            новинки
+          </h2>
+          <div class="newcomes__product prod">
+            <picture class="prod__image prod__image--dark">
+              <source media="(min-width: 1200px)" srcset="img/getting_dark_chear_desk_1x.jpg 1x, img/getting_dark_chear_desk_2x.jpg 2x" alt="Стул «Смеркается»">
+                <img src="img/getting_dark_chear.jpg" alt="Стул «Смеркается»">
+            </picture>
+            <p class="prod__description">Стул «Смеркается»</p>
+            <p class="prod__price">$280</p>
+          </div>
 
-        <div class="newcomes__product prod prod--accent">
-          <picture class="prod__image">
-            <source media="(min-width: 1200px)" srcset="img/cream_table_desk_1x.png 1x, img/cream_table_desk_2x.jpg 2x" alt="Стол «Крем брюле»">
-            <img src="img/cream_table.png" alt="Стол «Крем брюле»" width="270" height="198">
-          </picture>
-          <p class="prod__description">Стол «Крем брюле»</p>
-          <p class="prod__price">$320</p>
-        </div>
+          <div class="newcomes__product prod prod--accent">
+            <picture class="prod__image">
+              <source media="(min-width: 1200px)" srcset="img/cream_table_desk_1x.png 1x, img/cream_table_desk_2x.jpg 2x" alt="Стол «Крем брюле»">
+              <img src="img/cream_table.png" alt="Стол «Крем брюле»" width="270" height="198">
+            </picture>
+            <p class="prod__description">Стол «Крем брюле»</p>
+            <p class="prod__price">$320</p>
+          </div>
 
-        <div class="newcomes__product prod">
-          <picture class="prod__image">
-            <source media="(min-width: 1200px)" srcset="img/lamp_desk_1x.jpg 1x, img/lamp_desk_2x.jpg 2x" alt="Люстра «Облако»">
-            <img src="img/lamp.jpg" alt="Люстра «Облако»" width="202" height="226">
-          </picture>
-          <p class="prod__description">Люстра «Облако»</p>
-          <p class="prod__price">$250</p>
+          <div class="newcomes__product prod">
+            <picture class="prod__image">
+              <source media="(min-width: 1200px)" srcset="img/lamp_desk_1x.jpg 1x, img/lamp_desk_2x.jpg 2x" alt="Люстра «Облако»">
+              <img src="img/lamp.jpg" alt="Люстра «Облако»" width="202" height="226">
+            </picture>
+            <p class="prod__description">Люстра «Облако»</p>
+            <p class="prod__price">$250</p>
+          </div>
         </div>
 
         <div class="newcomes__product prod prod--big">

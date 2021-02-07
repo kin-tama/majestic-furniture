@@ -13,21 +13,68 @@
   padding-top: 2px;
   font-weight: 600;
   font-size: 15px;
-  width: 48px;
+  width: 60px;
+  text-align: right;
+  padding-right: 22px;
 
-  &--major {
-    font-weight: 700;
-    padding: 0;
-    width: 50px;
+
+  @media (min-width: @desktop) {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: @Playfair;
+
+    &--major {
+      display: none;
+    }
+
+    &:checked {
+      font-size: 40px;
+    }
   }
 
-  &::before {
-    content: "";
-    top: 10px;
-    left: 0;
+  @media (max-width: @mobile) {
+    &::before {
+      content: "";
+      top: 10px;
+      left: 0;
+      position: absolute;
+      height: 2px;
+      width: 226px;
+      background-color: @opacity-black-two;
+    }
+  }
+}
+
+.leaf__wrapper {
+  @media (min-width: @desktop) {
     position: absolute;
-    height: 2px;
-    width: 226px;
-    background-color: @opacity-black-two;
+    top: 300px;
+    right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 205px;
   }
+}
+
+.leaf__radio {
+  appearance: none;
+  // &:checked::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 10px;
+  //   height: 54px;
+  //   width: 2px;
+  //   background-color: black;
+  // }
+
+  &:checked + .leaf__count {
+    font-size: 40px;
+    border-right: black solid 2px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    height: 54px;
+  }
+
 }
